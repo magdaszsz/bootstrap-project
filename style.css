@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Welcome  */
+
+.welcome.container-fluid {
+  height: 100vh;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  background-image: url("images/welcome-image.jpg");
+  background-position: right top;
+}
+
+h1 {
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 2em;
+  color: rgb(228, 218, 218);
+  margin-bottom: 3em;
+}
+
+button {
+  width: 20%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2em;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background: black;
+  color: #fff;
+}
+
+.social-icons {
+  width: 20%;
+}
+
+i {
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  button,
+  .social-icons {
+    width: 30%;
+  }
+
+  .welcome.container-fluid {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("images/welcome-image.jpg");
+  }
+}
+
+/************ PRODUCTS**************/
+
+.products {
+  height: auto;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.col-sm-12 {
+  height: 100%;
+}
+
+

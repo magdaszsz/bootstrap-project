@@ -10,10 +10,11 @@
 
 .welcome.container-fluid {
   height: 100vh;
+  min-height: 100vh;
   color: white;
   font-family: "Raleway", sans-serif;
-  background-image: url("images/welcome-image.jpg");
-  background-position: right top;
+  background-image: url("images/wool/welcome-image.jpg");
+  background-position: 90% top;
 }
 
 h1 {
@@ -35,6 +36,7 @@ button {
   transition: all 0.5s;
   cursor: pointer;
 }
+
 
 .btn-light:hover {
   background: black;
@@ -59,12 +61,12 @@ i:hover {
 @media (max-width: 768px) {
   button,
   .social-icons {
-    width: 30%;
+    width: 40%;
   }
 
   .welcome.container-fluid {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("images/welcome-image.jpg");
+      url("images/wool/welcome-image.jpg");
   }
 }
 
@@ -85,3 +87,13 @@ img {
 }
 
 
+/* iceland carousel */
+
+.iceland {
+  height: 70vh;
+}
+
+.iceland img {
+  object-fit: cover;
+  height: 70vh;
+}
